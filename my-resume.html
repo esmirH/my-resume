@@ -1,0 +1,335 @@
+<!--
+U toku devetog sahata sam kompletirao cijelu stranicu i povezao dijelove stranice sa navigacionom trakom.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume Webpage Hour 7</title>
+</head>
+
+<body>
+    <style>
+        .main-page {
+            z-index: 2;
+            background-image: url(img/medical-sales-rep-1300.jpg);
+            height: 800px;
+            width: auto;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+      
+
+        a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100px;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.24);
+            justify-content: space-around;
+            align-items: center;
+        }
+
+       .message {
+           justify-self: center;
+           color: white;
+           font-size: larger;
+       }
+
+       .profile-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        background-color: black;
+        padding: 20px;
+        
+    }
+
+   
+    
+    
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 300px;
+        height: auto;
+        background-color: transparent;
+        padding: 10px;
+        color: azure;
+        text-align: center;
+    }
+
+    .profile-picture {
+        display: flex;
+        align-self: center;
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        background: url(img/profil-pic-1.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        background-color: transparent;
+        color: azure;
+        margin: 10px;
+        color: beige;
+        padding-top: 30px;
+    }
+    
+    .experiences {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        color: black;
+        
+    }
+
+    .education {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        color: black;
+    }
+
+    .period {
+        text-align: right;
+        padding-right: 30px;
+        width: 300px;
+        height: auto;
+        border-right: 3px solid rgb(92, 83, 122);
+        color: black;
+    }
+
+    .description {
+        width: 300px;
+        height: auto;
+        padding-left: 30px;
+        color: black;
+    }
+
+    .edu, .exp {
+        width: 300px;
+        height: auto;
+        text-align: center;
+        font-size: large;
+    }
+
+    img {
+        width:20px;
+        
+    }
+
+    .main-edu {
+        background-color: rgba(164, 164, 167, 0.342);
+        padding: 10px;
+    }
+       
+
+        @media screen and (max-width: 1024px) {
+            .main-page {
+                background-image: url(img/medical-sales-rep-1024.jpg);
+                height: 682px;
+                width: auto;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .main-page {
+                background-image: url(img/medical-sales-rep-768.jpg);
+                height: 511px;
+                width: auto;
+                font-size: 14px;
+            }
+
+            .links {
+                height: 50px;
+            }
+        }
+
+        @media screen and (max-width: 404px) {
+            .main-page {
+                background-image: url(img/medical-sales-rep-404.jpg);
+                height: 259px;
+                width: auto;
+                font-size: 12px;
+            }
+
+            .links {
+                height: 30px;
+            }
+        }
+
+        @media (max-width: 700px){
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .info {
+            align-self: center;
+        }
+    }
+    </style>
+    <div class="main-page">
+        <div class="links">
+            <div>
+                <a href="#about-me">About Me</a>
+            </div>
+            <div>
+                <a href="#experiences">Experiences</a>
+            </div>
+            <div>
+                <a href="#education">Education</a>
+            </div>
+            <div>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+
+        <div class="message">
+            <div class="name">
+                <h1>mr ph ESMIR HUSIC (39)</h1>
+            </div>
+            <div class="msg">
+                <h2>A pharmacist with experience in sales.</h2>
+            </div>
+        </div>
+    </div>
+    <div class="profile-container">
+        <div id="about-me" class="about-me">
+            <h2 style="color:aqua;">About me</h2>
+            <p><em>Over ten years of work experience both in pharmacy and in the representation of international pharmaceutical companies.
+                Through the above experience, I have developed very close relationships with key doctors in northeastern Bosnia. 
+                I am currently a key account manager. My areas of interest in the treatment of the disease are cardiology and pulmonology.</em> </p>
+        </div>
+        <div class="profile-picture"></div>
+        <div id="contact" class="info">
+            
+            <p><img src="img/baseline_place_black_24dp.png" alt="location icon"> Ismeta Mujezinovića 26, 7500 Tuzla</p>
+            <p><img src="img/baseline_phone_black_24dp.png" alt="phone icon"> +38761224773</p>
+            <p><img src="img/email-icon.png" alt="e-mail"> esmir.husic1983@hotmail.com</p>
+            
+        </div>
+    </div>
+    
+    
+    <div id="experiences" class="exp">
+        <h1>Eksperiences</h1>
+    </div>
+    <div class="experiences">
+        <div class="period">
+            <p><strong>Novartis Pharma Inc, Švajcarska</strong></p>
+            
+            <p><em>From 2013 to pesent</em></p>
+        </div>
+        <div class="description">
+            <p><strong>Key Account Manager</strong></p>
+            <p>In the position of Key Account Manager, I am in charge of the most important doctors in the field of cardiology and pulmonology in northeastern Bosnia.
+                I am also in charge of ensuring that Novartis medicines are on the essential lists and for their marketing in general.</p>
+        </div>
+    </div>
+    <div class="experiences">
+        <div class="period">
+            <p><strong>PharmaS, Zagereb, HR</strong></p>
+            
+            <p><em>From 2013 to 2013</em></p>
+        </div>
+        <div class="description">
+            <p><strong>Medical Representative</strong></p>
+            <p>I was in charge of presenting the company's medicines as well as taking care of their distribution in Tuzla Canton.</p>
+        </div>
+    </div>
+    <div class="experiences">
+        <div class="period">
+            <p><strong>KRKA doo, Novo Mesto, SL</strong></p>
+            
+            <p><em>From 2012 to 2013</em></p>
+        </div>
+        <div class="description">
+            <p><strong>Medical Representative</strong></p>
+            <p>I was in charge of presenting the company's medicines as well as taking care of their distribution in part of Tuzla Canton.</p>
+        </div>
+    </div>
+    <div  class="experiences">
+        <div class="period">
+            <p><strong>Apoteka "Zdravlje", Brčko Distrikt, BiH</strong></p>
+            
+            <p><em>From 2011 to 2012</em></p>
+        </div>
+        <div class="description">
+            <p><strong>Pharmacist</strong></p>
+            <p>During this period, I did an internship as a pharmacist.</p>
+        </div>
+    </div>
+
+    <div class="main-edu">
+        <div class="edu">
+            <h1>Education</h1>
+        </div>
+        <div id="education" class="education">
+            <div class="period">
+                <p><strong>Pharmacy faculty Tuzla</strong></p>
+                
+                <p><em>From 2004 to 2011</em></p>
+            </div>
+            <div class="description">
+                <p><strong>Pharmacist</strong></p>
+            </div>
+        </div>
+        <div class="education">
+            <div class="period">
+                <p><strong>Medical High School Tuzla</strong></p>
+                
+                <p><em>2002</em></p>
+            </div>
+            <div class="description">
+                <p><strong>Pharmacy technician</strong></p>
+            </div>
+        </div>
+        <div class="education">
+            <div class="period">
+                <p><strong>Primary school "Seona" Banovići</strong></p>
+                <p><em>1998</em></p>
+            </div>
+            <div class="description">
+                <p><strong>Elementary education</strong></p>
+            </div>
+    </div>
+    </div>
+    
+
+
+</body>
+
+</html>
